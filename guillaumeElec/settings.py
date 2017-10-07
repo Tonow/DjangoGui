@@ -81,23 +81,15 @@ WSGI_APPLICATION = 'guillaumeElec.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-"""
+# ## Postgresql local ###########
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'guillaumeElec',
-    'USER':'thomas',
-    'PASSWORD':'Cr@y0n!Vert',
-    'HOST':'localhost',
-    'PORT':'',
-    }
-}
-"""
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'guillaumeelec',
+        'USER': 'thomas',
+        'PASSWORD': 'BaseT0Base',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
