@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <link rel="stylesheet" href="/static/css/style.css" />
+   <link rel="shortcut icon" type="image/jpg" href="/static/image/Logo1.jpg"/>
+   <title>{% block title_page %}TitrePage{% endblock %}</title>
+</head>
+<body>
+<header id="header">{% block title %}Header{% endblock %}</header>
+    <nav id="nav">
+       {% block nav %}
+       Navigation
+       {% endblock %}
+   </nav>
+   <section class="metier" >
+       {% block metier %}Metier{% endblock %}
+   </section>
+   <section class="content">
+       {% block content %}texte a mettre{% endblock %}
+   </section>
+<footer class="footer"> {% block footer %}Footer{% endblock %}</footer>
+</body>
+</html>

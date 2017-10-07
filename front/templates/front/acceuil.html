@@ -1,0 +1,25 @@
+{% extends "base_site.html" %}
+
+
+{% block content %}
+    <h2>Bienvenue !</h2>
+    <p>
+        Artisan électricien, travaillant dans le pays d’auge,
+        Sur l’ensemble des commune de </br>
+
+        <ul>
+         <li> <strong>Dives-sur-mer</strong></li>
+         <li> <strong>Cabourg</strong></li>
+         <li> <strong>Houlgate</strong></li>
+         <li> <strong>Dozulé</strong></li>
+         <li> <strong>Périers-en-Auge</strong></li>
+         <li> <strong>Gonneville-sur-Mer</strong></li>
+         <li> <strong>et leur alentour dans le Calvados.</strong></li>
+     </ul>
+
+
+        J’effectue des travaux, pour du neuf, des rénovation. Aussi bien pour des installation que pour du dépannage.</br>
+        Je travaille pour tout type d’installation électrique.</br>
+        N’hésiter pas a me contacter via le <a href="{% url "cont" %}">formulaire</a>
+    </p>
+{% endblock %}

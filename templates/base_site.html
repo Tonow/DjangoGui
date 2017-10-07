@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block title_page %} AGelec {% endblock %}
+
+{% block title %}
+
+<!-- <h1 class="titre">AG</h1><h1 class="titre_suite">elec</h1> -->
+<a href="{% url "home" %}">
+  <img class="logo" src="/static/image/LogoTitre.png" alt="AGelec" />
+</a>
+
+{% endblock %}
+
+{% block metier %} <h2><strong>AGelec : Electicité Géneral</strong><h2>{% endblock %}
+
+{% block nav %}
+<ul class="sidenav">
+  <li><a class="active" href="{% url "home" %}">Accueil</a></li>
+  <li><a href="{% url "coord" %}">Coordonnées</a></li>
+  <li><a href="{% url "cont" %}">Contact</a></li>
+</ul>
+{% endblock %}
+
+{% block footer %}
+<div>
+&copy;  2016 <strong>AGelec</strong>
+</div>
+{% endblock %}
