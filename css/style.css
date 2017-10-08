@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+    font-family: 'Oswald', sans-serif;
+    color: #1e1e1e;
+    background-image: url("/static/image/ener-ren-fond.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+
+img.logo{
+    margin-left: 10px;
+    vertical-align: top;
+    width: 70%;
+    height: 70%
+    opacity: 0.8;
+    z-index: 1;
+}
+
+nav{
+    vertical-align: top;
+    float: left;
+    margin-top: 17px;
+
+}
+
+
+a {
+text-decoration: underline;
+color: #1e1e1e;
+}
+
+a:hover {
+text-decoration: none;
+color: #3FCF06;
+}
+
+
+ul.sidenav {
+    list-style-type: none;
+    margin-top: 7%;
+    padding: 0;
+    width: 25%;
+    background-color: #f3ecd8;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.sidenav li a.active {
+    background-color: #3FCF06;
+    color: #000;
+}
+
+ul.sidenav li a:hover {
+    background-color: #555;
+    color: #f3ecd8;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+
+section.metier{
+    text-decoration: underline;
+    display: block;
+    font-size: 90%;
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 20%;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+section.content{
+    clear: left;
+    float: left;
+    display: block;
+    margin-top: 20px;
+}
+
+footer{
+    width: 70%;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    background-image: url("/static/image/Footer1.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    display: inline;
+    border: 1px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+iframe{
+    margin-left: inherit;
+    margin-right: inherit;
+    width: 100%
+}
+
+footer.footer{
+    text-align: center;
+    font-size: 50%;
+}
+
+
+
+
+
+
+@media screen {
+    ul.sidenav {
+        width:320px;
+        height:auto;
+        position:relative;
+        border-radius: 6px;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+
+    section.content{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    header{
+        margin-left: 25%;
+        width: 20%;
+        float: left;
+    }
+
+    nav{
+        width: 40%;
+        margin-right: 15%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+
+    header{
+        margin-left: 1%;
+        width: 100%;
+        float: left;
+    }
+
+    ul.sidenav {
+        width:100%;
+    }
+
+    nav{
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    img.logo{
+        margin-left: 25%;
+        vertical-align: top;
+        width: 45%;
+        height: 40%
+        opacity: 0.8;
+    }
+
+    iframe{
+        margin-left: 1px;
+        margin-right: inherit;
+        width: 100%
+    }
+
+    section.content{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    section.metier{
+        font-size: 65%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 500px) {
+    /* For mobile phones: */
+
+    img {
+    width: 100%;
+    height: auto;
+    }
+
+
+    body{
+        font-size: 300%;
+    }
+
+    input{
+        height: 35px;
+    }
+
+    button{
+        font-size: 35px;
+    }
+
+    header{
+        margin-left: 1%;
+        width: 100%;
+        float: left;
+    }
+
+    ul.sidenav {
+        width:100%;
+    }
+
+    nav{
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    img.logo{
+        margin-left: 25%;
+        vertical-align: top;
+        width: 45%;
+        height: 40%
+        opacity: 0.8;
+    }
+
+    section.content{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    section.metier{
+        font-size: 65%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}

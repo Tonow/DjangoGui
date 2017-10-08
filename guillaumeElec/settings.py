@@ -24,12 +24,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'o=cx9$a87d#*ax$knsg5w!=!obk50^wbt+a$+bw6kp7@*q)v6t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+#DEBUG = True
 DEBUG = False
 
-# Modif entre prod ou local
-ALLOWED_HOSTS = ["192.168.0.126", "82.228.61.73"]
-# ALLOWED_HOSTS = ['localhost']
+
+
+#Modif entre prod ou local
+#ALLOWED_HOSTS = ["192.168.0.126", "82.228.61.73"]
+ALLOWED_HOSTS = ["192.168.1.3", "agelec.no-one.fr"]
+
+
+
 
 # Application definition
 
@@ -61,7 +66,7 @@ ROOT_URLCONF = 'guillaumeElec.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # 'DIRS': [],
+        #'DIRS': [],
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -80,7 +85,16 @@ WSGI_APPLICATION = 'guillaumeElec.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'guillaumeelec',
+        'USER': 'thomas',
+        'PASSWORD': 'BaseT0Base',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 """
 DATABASES = {
     'default': {
@@ -93,6 +107,8 @@ DATABASES = {
     }
 }
 """
+"""
+
 
 DATABASES = {
     'default': {
@@ -100,6 +116,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+"""
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -118,18 +136,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-# Test fichier static
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static', BASE_DIR)
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+##Test fichier static
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static' , BASE_DIR)
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    BASE_DIR + '/static/',
-)
+#STATICFILES_DIRS = (
+#    BASE_DIR + '/static/',
+#)
 
-# Indiquer les dossiers média
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+    )
+
+#Indiquer les dossiers média
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR + '/media/'

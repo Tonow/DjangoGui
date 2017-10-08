@@ -22,6 +22,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/', include('front.urls')),
 ]
-static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-handler404 = 'front.views.view_404'
+#static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+#handler404 = 'front.views.view_404'
 #
