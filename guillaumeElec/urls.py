@@ -23,5 +23,5 @@ urlpatterns = [
     url(r'^index/', include('front.urls')),
 ]
 #static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-#handler404 = 'front.views.view_404'
+handler404 = 'front.views.view_404'
 #
